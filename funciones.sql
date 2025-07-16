@@ -10,8 +10,8 @@ CREATE OR REPLACE FUNCTION public.pgtcpcheck(
 RETURNS TABLE( 
                ip_server INET, 
                port INT,
-			   status_connect BOOLEAN
-			 )
+               status_connect BOOLEAN
+             )
 SET client_min_messages='notice'
 STRICT
 AS $_fn_$
