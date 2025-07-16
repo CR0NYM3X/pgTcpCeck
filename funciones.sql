@@ -2,7 +2,7 @@
 
 
 
-CREATE OR REPLACE FUNCTION public.pgtcpheck(
+CREATE OR REPLACE FUNCTION public.pgtcpcheck(
                                              p_ip_servers TEXT,
                                              p_port INTEGER DEFAULT 5432,
                                              p_timeout INTEGER DEFAULT 2
@@ -77,8 +77,8 @@ $_fn_$ LANGUAGE plpgsql  ;
 
 
 
--- SELECT * from pgtcpheck('100.28.192.123', 5432);
--- SELECT * from pgtcpheck('100.28.192.12:5418,10.28.230.123:5416');
+-- SELECT * from pgtcpcheck('100.28.192.123', 5432);
+-- SELECT * from pgtcpcheck('100.28.192.12:5418,10.28.230.123:5416');
 
  
 -- ##########################################################################################################################################################
