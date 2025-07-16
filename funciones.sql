@@ -1,9 +1,12 @@
 
+
+
+
 CREATE OR REPLACE FUNCTION public.pgtcpheck(
-                                       p_ip_servers TEXT,
-									   p_port INTEGER DEFAULT 5432,
-									   p_timeout INTEGER DEFAULT 2
-									)												
+                                             p_ip_servers TEXT,
+                                             p_port INTEGER DEFAULT 5432,
+                                             p_timeout INTEGER DEFAULT 2
+                                            )												
 RETURNS TABLE( 
                ip_server INET, 
                port INT,
@@ -74,8 +77,8 @@ $_fn_$ LANGUAGE plpgsql  ;
 
 
 
--- SELECT * from pgtcpheck('10.28.230.123', 5432);
--- SELECT * from pgtcpheck('10.28.230.12:5418,10.28.230.123:5416');
+-- SELECT * from pgtcpheck('100.28.192.123', 5432);
+-- SELECT * from pgtcpheck('100.28.192.12:5418,10.28.230.123:5416');
 
  
 -- ##########################################################################################################################################################
